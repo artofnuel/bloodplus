@@ -28,9 +28,9 @@ const Services = () => {
           <p className="text-xl italic">Besides saving lives...</p>
         </div>
         <section className="py-10 w-full h-auto mx-auto grid lg:grid-cols-3 justify-center items-start gap-5">
-          {Volunteers.map((volunteer) => (
+          {Volunteers.map((volunteer, index) => (
             <div
-              key={volunteer.id}
+              key={index}
               className="w-full flex flex-col lg:flex-row justify-center items-center lg:items-start gap-5 p-4 drop-shadow-md bg-white rounded-md"
             >
               <Image
