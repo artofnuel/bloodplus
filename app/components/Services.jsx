@@ -16,7 +16,7 @@ const Services = () => {
             donation process, recruiting people for blood, plasma, stem cell
             donations, organizing donation or typing events, or raising
             awareness about the importance of blood or plasma donation; you too
-            are an integral part of BloodPlus's Lifeline.
+            are an integral part of BloodPlus&apos;s Lifeline.
           </p>
         </div>
       </section>

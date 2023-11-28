@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <div className="w-full h-full p-4 lg:p-8 absolute flex flex-col justify-center items-start gap-5 inset-0 z-30">
           <h1 className="text-2xl lg:text-4xl text-white">
-            Don't forget you can save lives
+            Don&apos;t forget you can save lives
             <br />
             by donating
             <span className="text-4xl lg:text-6xl pl-2 font-bold text-primary">
