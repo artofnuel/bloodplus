@@ -2,6 +2,7 @@ export const Assets = {
   megaphone: require("../assets/megaphone.png"),
   award: require("../assets/award.png"),
   thumbs_up: require("../assets/thumbs-up.png"),
+  bkg: require("../assets/bkg.jpg"),
 };
 
 export const Volunteers = [
