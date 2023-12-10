@@ -12,7 +12,7 @@ const Services = () => {
         </h2>
         <section className="mt-4 grid lg:grid-cols-2 gap-5">
           {Volunteers.map((data, index) => (
-            <ul className="p-2 bg-secondary rounded-md text-white">
+            <ul key={index} className="p-2 bg-secondary rounded-md text-white">
               <li>
                 <h3>{data.title}</h3>
                 <p>{data.descript}</p>
