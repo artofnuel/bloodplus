@@ -21,11 +21,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* <head>
+        <link rel="icon" href="/logo.png" type="image/png" sizes="any" />
+      </head> */}
       <body className={`${poppins.className} flex flex-col`}>
         <div className="z-50">
           <Navbar />
         </div>
-        <div className="mt-[75px] lg:mt-[115px]">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </body>
     </html>

@@ -2,29 +2,30 @@ export const Assets = {
   megaphone: require("../assets/megaphone.png"),
   award: require("../assets/award.png"),
   thumbs_up: require("../assets/thumbs-up.png"),
+  logo: require("../assets/logo.png"),
+  logoFlat: require("../assets/logoFlat.jpg"),
   bkg: require("../assets/bkg.jpg"),
 };
 
 export const Volunteers = [
   {
-    id: 0,
-    title: "Make all the difference",
+    title: "Blood Donor Recruitment: ",
     descript:
-      "Whether you are new to a community or resided there for years, you can have a direct impact on the life of a neighbour, friend or stranger in need. Many volunteers find that helping others can spark a positive change that fuels their community's energy and enthusiasm for life. Volunteers don't just make a difference, they make all the difference.",
-    image: Assets.megaphone,
+      "Organise blood donor recruitment drives and campaigns to encourage people to donate blood.",
   },
   {
-    id: 1,
-    title: "Develop new skills",
+    title: "Blood Donation Education: ",
     descript:
-      "Apply your skills, develop some new ones, and gain valuable leadership experience along the way. If you have ever been interested in working in the healthcare or medical industry, or simply wanting to try something new, there are opportunities here for you.",
-    image: Assets.award,
+      "Provide education and training to healthcare professionals, blood donors, and the general public on blood donation best practices.",
   },
   {
-    id: 0,
-    title: "Help us improve",
+    title: "Online Platform for Blood Donation: ",
     descript:
-      "Your experience and feedback help us to continuously improve the volunteer and donor experience. We encourage all volunteers to attend regular meetings, participate in our national surveys, and provide valuable feedback wherever possible.",
-    image: Assets.thumbs_up,
+      "Create an online platform that connects blood donors with hospitals and blood banks. Donors can register, schedule appointments, and track their donation history. ",
+  },
+  {
+    title: "Blood Donation Analytics: ",
+    descript:
+      "Offer data analytics services to hospitals and blood banks to help them optimise their blood inventory management.",
   },
 ];

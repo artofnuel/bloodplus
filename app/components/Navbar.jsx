@@ -3,18 +3,21 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { IoMenu, IoClose } from "react-icons/io5";
 import useStore from "../store/useStore";
+import { Assets } from "../assets/data";
 
 const Navbar = () => {
   const { showMenu, handleShowMenu, falseShowMenu } = useStore();
 
   return (
-    <header className="w-full fixed bg-white drop-shadow-md">
+    <header className="w-full bg-white drop-shadow-md">
       <nav>
         <div className="w-full flex justify-between items-center p-4 lg:p-8 relative">
           <button>
-            <h1 className="text-primary text-xl lg:text-4xl font-bold">
-              BloodPlus<span className="text-secondary">.ng</span>
-            </h1>
+            <Image
+              src={Assets.logo}
+              alt="bloodplus-ng"
+              className="w-[100px] "
+            />
           </button>
           <div
             onClick={handleShowMenu}
@@ -23,7 +26,7 @@ const Navbar = () => {
             {showMenu ? <IoClose size={26} /> : <IoMenu size={26} />}
           </div>
           {showMenu === true && (
-            <div className="w-1/2 fixed top-0 right-0 lg:hidden flex flex-col justify-center items-center bg-primary/90 text-white">
+            <div className="w-1/2 fixed top-0 right-0 lg:hidden flex flex-col justify-center items-center bg-primary text-white">
               <div
                 onClick={falseShowMenu}
                 className="w-full flex justify-end items-end p-6"
@@ -46,11 +49,11 @@ const Navbar = () => {
                     Contact
                   </button>
                 </li>
-                <li>
+                {/* <li>
                   <button className="p-3 font-bold  hover:-translate-y-1 bg-white text-primary rounded-md transition-all duration-300 ease-in-out">
                     Account
                   </button>
-                </li>
+                </li> */}
               </ul>
             </div>
           )}
@@ -70,11 +73,11 @@ const Navbar = () => {
                 Contact
               </button>
             </li>
-            <li>
+            {/* <li>
               <button className="p-3 font-bold text-white hover:-translate-y-1 bg-primary rounded-md transition-all duration-300 ease-in-out">
                 Account
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>
