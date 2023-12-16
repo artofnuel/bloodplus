@@ -16,7 +16,7 @@ const Navbar = () => {
             <Image
               src={Assets.logo}
               alt="bloodplus-ng"
-              className="w-[100px] "
+              className="w-[120px] "
             />
           </button>
           <div

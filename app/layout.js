@@ -2,6 +2,7 @@ import { Inter, Nunito, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { MotionDiv } from "./components/MotionDiv";
 
 // const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -28,8 +29,10 @@ export default function RootLayout({ children }) {
         <div className="z-50">
           <Navbar />
         </div>
-        <div className="">{children}</div>
-        <Footer />
+        <MotionDiv>
+          <div className="">{children}</div>
+          <Footer />
+        </MotionDiv>
       </body>
     </html>
   );
